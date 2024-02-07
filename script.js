@@ -10,3 +10,11 @@ function copyText(params) {
     updateCopyButtonText();
     // above code updates the button text
 }
+
+function updateCopyButtonText() {
+    var copyButton = document.querySelector('#copyTextArea + button');
+    copyButton.innerText = 'Copied';
+    setTimeout(() => {
+        copyButton.innerText = 'Copy Text';
+    }, 2000); // Reset the button text after 2 seconds
+}
