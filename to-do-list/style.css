@@ -1,0 +1,65 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px
+  }
+  .to-do {
+    width: 35%;
+    min-height: 100px; /* Set a minimum height to accommodate some tasks */
+    height: auto; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    
+  }
+  .to-do h1{
+    margin-bottom: 20px;
+    text-align: center;
+  }
+.bind {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  .bind button{
+    padding: 6px;
+  }
+  #to-input {
+    width: 300px;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  #to-input:focus {
+    outline: none;
+  } 
+  
+  #todo-list {
+    list-style: none;
+    padding: 0;
+    width: 300px;
+  }
+
+  li {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .to-do button {
+    padding: 9px; /* Adjust the padding to increase the height */
+    /* You can also use height property like height: 40px; */
+    background-color: #ff0000; /* Just adding a background color for visibility */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
